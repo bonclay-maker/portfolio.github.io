@@ -7,10 +7,10 @@
 
   /*========== Colors ==========*/
   /* Change favorite color */
-  --hue-color: 899 ;
+  --hue-color: 900 ;
 
   /* HSL color mode */
-  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color: hsl(var(--hue-color), 82%, 65%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -189,6 +189,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .nav__logo,
@@ -290,10 +291,11 @@ img {
 .home__blob {
   width: 200px;
   fill: var(--first-color);
+  margin-left: 120px;
 }
 
 .home__blob-img {
-  width: 200px;
+  width: 470px;
   align-self: center;
 }
 
@@ -1149,6 +1151,190 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Portfolio Cards */
+.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: start;
+}
+
+.portfolio__card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio__card:hover {
+  transform: translateY(-10px);
+}
+
+.portfolio__img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.portfolio__card-content {
+  padding: 1.5rem;
+}
+
+.portfolio__title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio__description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.portfolio__button {
+  font-size: 0.9rem;
+  color: #007bff;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.portfolio__button:hover {
+  color: #0056b3;
+}
+
+.button__icon {
+  margin-left: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.figma-showcase {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.section__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section__subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.figma__container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.figma__wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+
+.figma__card {
+  flex: 0 0 100%; /* Displays two cards at a time */
+  max-width: 50%;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+
+.figma__card:hover {
+  transform: translateY(-20px);
+}
+
+
+
+/* Medium screens (tablets, smaller laptops) */
+@media (min-width: 768px) {
+  .figma__card {
+      flex: 0 0 50%; /* 2 cards per row */
+      max-width: 50%;
+  }
+}
+
+/* Large screens (desktops, larger laptops) */
+@media (min-width: 1024px) {
+  .figma__card {
+      flex: 0 0 33.33%; /* 3 cards per row */
+      max-width: 33.33%;
+  }
+}
+
+
+.figma__img {
+  width: 185px;
+  height: 420px;
+  border-radius: 0.5rem;
+}
+
+.figma__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(1, 42, 248);
+  background-color: white; /* Add a background color */
+  border: 2px solid rgb(255, 255, 255); /* Add a border for definition */
+  width: 40px; /* Set a fixed width */
+  height: 40px; /* Set a fixed height equal to the width for a perfect circle */
+  display: flex; /* Use flexbox for centering the arrow symbol */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+  font-size: 25px; /* Adjust the size of the arrow symbol */
+  padding: 0; /* Remove padding */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+
+.figma__arrow--prev {
+  left: 10px;
+}
+
+.figma__arrow--next {
+  right: 10px;
+}
+
+.figma__arrow:hover {
+  background-color: rgba(0, 225, 255, 0.7);
+}
+
+
 
 
 

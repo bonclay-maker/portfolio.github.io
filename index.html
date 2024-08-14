@@ -29,6 +29,8 @@
                             <i class="uil uil-estate nav__icon"></i>Home
                         </a>
                     </li>
+
+                    <!--
                     <li class="nav__item">
                         <a href="#about" class="nav__link">
                             <i class="uil uil-user nav__icon"></i>About
@@ -38,11 +40,11 @@
                         <a href="#skills" class="nav__link">
                             <i class="uil uil-file-alt nav__icon"></i>Skills
                         </a>
-                    </li>
+                    </li>-->
 
                     <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i>Projects
+                        <a href="#figma-work" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>work
                         </a>
                     </li>
                     <li class="nav__item">
@@ -68,299 +70,42 @@
     <!--==================== MAIN ====================-->
     <main class="main">
 
-
-        <!--==================== HOME ====================-->
         <section class="home section" id="home">
             <div class="home__container container grid">
                 <div class="home__content grid">
-
                     <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                        <svg class="home__blob" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <path d="M442.5,196.5c30.8,67.3-3.8,163.7-50.5,208.5c-46.7,44.8-105.5,38-172.8,23.5
+                                C151.9,414,76.1,391.8,36.9,343.8c-39.2-48-41.8-121.8-19.2-191.5C40.3,82.6,88.1,17,153.4,3.8
+                                C218.7-9.4,301.5,29.8,360,69.5C418.5,109.2,411.7,129.2,442.5,196.5z" />
                             </mask>
                             <g mask="url(#mask0)">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                <image class="home__blob-img" x="" xlink:href="packages/images/me11.jpg" />
+                                <path d="M442.5,196.5c30.8,67.3-3.8,163.7-50.5,208.5c-46.7,44.8-105.5,38-172.8,23.5
+                                C151.9,414,76.1,391.8,36.9,343.8c-39.2-48-41.8-121.8-19.2-191.5C40.3,82.6,88.1,17,153.4,3.8
+                                C218.7-9.4,301.5,29.8,360,69.5C418.5,109.2,411.7,129.2,442.5,196.5z" />
+                                <image class="home__blob-img" x="0" y="-35"  height="600" xlink:href="packages/images/me11.jpg" />
                             </g>
                         </svg>
                     </div>
-
+        
                     <div class="home__data">
                         <h1 class="home__title">Hi, I'm Yani</h1>
                         <h3 class="home__subtitle">Computer science student</h3>
-                       
                         <a href="#contact" class="button button--flex home__button">
                             Contact Me<i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
                 </div>
- 
-            </div>
-           
-        </section>
-
-        <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
-            <h2 class="section__title">About Me</h2>
-            <span class="section__subtitle">My Introduction</span>
-
-            <div class="about__container container grid">
-                <img src="packages/images/me2.jpg" alt="" class="about__img">
-                <div class="about__data">
-                    <p class="about__description">
-                        As an AI enthusiast, I aim for excellence. Determined to deepen my skills and acquire strong knowledge in this field for a specialized master's degree, I am ready to take on the challenges of your program.
-                    </p>
-                    
-                    <div class="about__buttons">
-                        <a download="" href="packages/pdf/cvHETIC.pdf" class="button button--flex">
-                            Download CV<i class="uil uil-download-alt button__icon"></i>
-                        </a>
-                    </div>
-                </div>
             </div>
         </section>
 
-        <!--==================== SKILLS ====================-->
-        <section class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My technical level</span>
-
-            <div class="skills__container container grid">
-                 <div> 
-                    <!--==================== SKILL-1 ====================-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-robot skills__icon"></i>
-                            <div>
-                                <h1 class="skills__title">Machine Learning</h1>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Python</h3>
-                                    <span class="skills__number">50%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__python" style="width: 50%;"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Tensorflow</h3>
-                                    <span class="skills__number">40%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__tab" style="width: 40%;"></span>
-                                </div>
-                            </div>
-                          
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Kaggle</h3>
-                                    <span class="skills__number">40%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__google" style="width: 40%;"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-         
-                    <!--==================== SKILLS 2 ====================-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>
-                            <div>
-                                <h1 class="skills__title">Web Development</h1>
-                                
-                            </div>
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Django web framework</h3>
-                                    <span class="skills__number">40%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__wordpress" style="width: 45%;"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">HTML</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__html" style="width: 80%;"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">CSS</h3>
-                                    <span class="skills__number">60%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__css" style="width: 65%;"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Bootstrap</h3>
-                                    <span class="skills__number">60%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__css" style="width: 65%;"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">JavaScript</h3>
-                                    <span class="skills__number">40%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__js" style="width: 45%;"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Node.js</h3>
-                                    <span class="skills__number">40%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__js" style="width: 45%;"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">SQL</h3>
-                                    <span class="skills__number">50%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__js" style="width: 45%;"></span>
-                                </div>
-                            </div>
-                           
-                        </div>
-                    </div>
-                </div>
-               
-                    <!--==================== SKILLS 3 ====================-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-laptop skills__icon"></i>
-                            <div>
-                                <h1 class="skills__title">Mobile Development</h1>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">React Native</h3>
-                                    <span class="skills__number">30%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__wordpress" style="width: 90%;"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">JavaScript</h3>
-                                    <span class="skills__number">40%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__html" style="width: 80%;"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">JSX</h3>
-                                    <span class="skills__number">30%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__css" style="width: 70%;"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== QUALIFICATION ====================-->
-        <section class="qualification__section">
-            <h2 class="section__title">Education</h2>
-
-            <div class="qualification__container container">
-
-                    <div class="qualification__tabs">
-                        <div class="qualification__button button--flex qualification__active" data-target='#education'>
-                            <i class="uil uil-graduation-cap qualification__icon"></i>
-                            Education
-                        </div> 
-                    </div>
-
-                
-                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
-                    <div class="qualification__content qualification__active" data-content id="education">
-
-                      
-
-                        <!--==================== QUALIFICATION 2 ====================-->
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Computer science student</h3>
-                                <span class="qualification__subtitle">Abderrahmane Mira University, Béjaia</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2021 - 2024
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--==================== QUALIFICATION 1 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Baccalaureate degree in experimental sciences</h3>
-                                <span class="qualification__subtitle">Debbih Cherif, Akbou - Béjaia</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2021
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                    </div>
-                
-                 </div>
-        </section>
+        
 
       
-        <!--==================== Projects ====================-->
+      
+        <!--==================== Projects 
         <section class="portfolio section" id="portfolio">
 
             <h2 class="section__title">Portfolio</h2>
@@ -369,7 +114,6 @@
             <div class="portfolio__container container swiper-container">
                 <div class="swiper-wrapper">
 
-                     <!--==================== PORTFOLIO 1 ====================-->
 
                      <div class="portfolio__content grid swiper-slide">
                         <img src="packages/images/aiIMG.png" controls loop class="portfolio__img">
@@ -394,7 +138,6 @@
                         </div>
                     </div>
 
-                    <!--==================== PORTFOLIO 2 ====================-->
 
                     <div class="portfolio__content grid swiper-slide">
                         <img src="./packages/images/portfolio.png" alt="" class="portfolio__img">
@@ -422,6 +165,191 @@
             </div>
 
         </section>
+        ====================-->
+
+
+
+        <!--cards
+
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Figma Portfolio</h2>
+            <span class="section__subtitle">Most recent designs</span>
+        
+            <div class="portfolio__container container grid">
+                <div class="portfolio__card">
+                    <img src="packages/images/aiIMG.png" alt="Figma Project 1" class="portfolio__img">
+                    <div class="portfolio__card-content">
+                        <h3 class="portfolio__title">Project Name 1</h3>
+                        <p class="portfolio__description">A brief description of the Figma design project. Highlight key features or the design process.</p>
+                        <a href="#" class="button button--flex portfolio__button" target="_blank">
+                            View Design
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="portfolio__card">
+                    <img src="packages/images/aiIMG.png" alt="Figma Project 2" class="portfolio__img">
+                    <div class="portfolio__card-content">
+                        <h3 class="portfolio__title">Project Name 2</h3>
+                        <p class="portfolio__description">A brief description of the Figma design project. Highlight key features or the design process.</p>
+                        <a href="#" class="button button--flex portfolio__button" target="_blank">
+                            View Design
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="portfolio__card">
+                    <img src="packages/images/aiIMG.png" alt="Figma Project 3" class="portfolio__img">
+                    <div class="portfolio__card-content">
+                        <h3 class="portfolio__title">Project Name 3</h3>
+                        <p class="portfolio__description">A brief description of the Figma design project. Highlight key features or the design process.</p>
+                        <a href="#" class="button button--flex portfolio__button" target="_blank">
+                            View Design
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>""
+                </div>
+
+
+                <div class="portfolio__card">
+                    <img src="packages/images/me2.jpg" alt="Figma Project 3" class="portfolio__img">
+                    
+                </div>
+        
+            </div>
+        </section>
+
+    -->
+
+
+
+<!-- Card 1 
+        <section class="figma-showcase section">
+            <h2 class="section__title">Food Delivery App</h2>
+            <span class="section__subtitle">Figma Designs</span>
+        
+            <div class="figma__container">
+                <div class="figma__wrapper">
+                    
+                    <div class="figma__card">
+                        <img src="packages/images/img/code11.png" alt="Design 1" class="figma__img">
+                        
+                    </div>
+
+
+                    <div class="figma__card">
+                        <img src="packages/images/img/confirm.png" alt="Design 2" class="figma__img">
+                        <h3 class="figma__title">Design 2</h3>
+                        <p class="figma__description">Brief description of the design.</p>
+                    </div>
+
+
+                    <div class="figma__card">
+                        <img src="packages/images/img/home.png" alt="Design 3" class="figma__img">
+                        <h3 class="figma__title">Design 3</h3>
+                        <p class="figma__description">Brief description of the design.</p>
+                    </div>
+                    <div class="figma__card">
+                        <img src="packages/images/img/loc.jpg" alt="Design 4" class="figma__img">
+                        <h3 class="figma__title">Design 4</h3>
+                        <p class="figma__description">Brief description of the design.</p>
+                    </div>
+                </div>
+        
+                <button class="figma__arrow figma__arrow--prev">&#10094;</button>
+                <button class="figma__arrow figma__arrow--next">&#10095;</button>
+            </div>
+        </section>
+        
+    -->
+
+
+
+
+        <section class="figma-showcase section" id="figma-work">
+            <h2 class="section__title">Figma Work</h2>
+            <span class="section__subtitle">Most recent designs</span>
+        
+            <div class="figma__container">
+                <button class="figma__arrow figma__arrow--prev">&lt;</button>
+                
+                <div class="figma__wrapper">
+
+                   
+                    <!-- Card 1 -->
+                    <div class="figma__card">
+                        <img src="packages/images/img/select1.png" alt="Figma Project 1" class="figma__img">
+                    </div>
+        
+                    <!-- Card 2 -->
+                    <div class="figma__card">
+                        <img src="packages/images/img/select2.png" alt="Figma Project 2" class="figma__img">
+                    </div>
+        
+                    <!-- Card 3 -->
+                    <div class="figma__card">
+                        <img src="packages/images/img/select3.png" alt="Figma Project 3" class="figma__img">
+                    </div>
+
+                      <!-- Card 4 -->
+                      <div class="figma__card">
+                        <img src="packages/images/img/home.png" alt="Figma Project 4" class="figma__img">
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div class="figma__card">
+                        <img src="packages/images/img/confirm.png" alt="Figma Project 5" class="figma__img">
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div class="figma__card">
+                        <img src="packages/images/img/ajoutProd.png" alt="Figma Project 6" class="figma__img">
+                    </div>
+        
+                    <!-- Card 4 -->
+                    <div class="figma__card">
+                        <img src="packages/images/img/login11.png" alt="Figma Project 7" class="figma__img">
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="figma__card">
+                        <img src="packages/images/img/code11.png" alt="Figma Project 8" class="figma__img">
+                    </div>
+                    
+                    
+                    <!-- Card 4 -->
+                    <div class="figma__card">
+                        <img src="packages/images/img/num11.png" alt="Figma Project 9" class="figma__img">
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div class="figma__card">
+                        <img src="packages/images/img/loc.jpg" alt="Figma Project 10" class="figma__img">
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div class="figma__card">
+                        <img src="packages/images/img/Dash.png" alt="Figma Project 11" class="figma__img">
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div class="figma__card">
+                        <img src="packages/images/img/Dash2.png" alt="Figma Project 12" class="figma__img">
+                    </div>
+                    
+                   
+
+
+                </div>
+        
+                <button class="figma__arrow figma__arrow--next">&gt;</button>
+            </div>
+        </section>
+        
+
+        
 
         <!--==================== contact me section ====================-->
 
@@ -457,37 +385,11 @@
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer">
 
-        <div class="footer__bg">
-
-            <div class="footer__container container grid">
+    
 
 
-                <ul class="footer__links">
-                    <li>
-                        <a href="#home" class="footer__link">Home</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="footer__link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="footer__link">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#skills" class="footer__link">Skills</a>
-                    </li>
-                     <li>
-                        <a href="#about" class="footer__link">About</a>
-                    </li>
-                </ul>
-
-               
-            </div>
-            <p class="footer__copy">&#169; YANI. All rights reserved.</p>
-        </div>
-    </footer>
-
+    
     <!--==================== SCROLL TOP ====================-->
     <a href="#" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scrollup__icon"></i>
@@ -499,6 +401,7 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="packages/js/main.js"></script>
+    <script src="packages/js/arrowNav.js"  ></script>
     
 </body>
 
