@@ -1,50 +1,40 @@
-const figmaWrapper = document.querySelector('.figma__wrapper');
-const prevArrow = document.querySelector('.figma__arrow--prev');
-const nextArrow = document.querySelector('.figma__arrow--next');
+const slides = document.querySelectorAll('.figma__card');
+const slider = document.querySelector('.figma__wrapper');
+const prevButton = document.querySelector('.left-arrow2');
+const nextButton = document.querySelector('.right-arrow2');
 
 let currentIndex = 0;
-let cardsPerView = 1; // Default to 1, will be updated based on screen size
+let slidesPerView = getSlidesPerView();
 
-function updateCardsPerView() {
-    if (window.innerWidth >= 1024) {
-        cardsPerView = 3;
-    } else if (window.innerWidth >= 768) {
-        cardsPerView = 2;
-    } else {
-        cardsPerView = 1;
-    }
+function getSlidesPerView() {
+    if (window.innerWidth >= 1024) return 3;
+    if (window.innerWidth >= 768) return 2;
+    return 1;
 }
 
-function updatePosition() {
-    const totalCards = figmaWrapper.children.length;
-    figmaWrapper.style.transform = `translateX(-${(currentIndex * 100) / cardsPerView}%)`;
+function updateSlider() {
+    const slideWidth = slides[0].clientWidth;
+    slider.style.transform = `translateX(${-slideWidth * currentIndex}px)`;
 }
 
-function nextSlide() {
-    const totalCards = figmaWrapper.children.length;
-    currentIndex = (currentIndex + cardsPerView) % totalCards;
-    if (currentIndex + cardsPerView > totalCards) {
-        currentIndex = 0;
-    }
-    updatePosition();
+function showNextSlide() {
+    currentIndex = (currentIndex + slidesPerView) % slides.length;
+    updateSlider();
 }
 
-function prevSlide() {
-    const totalCards = figmaWrapper.children.length;
-    currentIndex = (currentIndex - cardsPerView + totalCards) % totalCards;
-    updatePosition();
+function showPrevSlide() {
+    currentIndex = (currentIndex - slidesPerView + slides.length) % slides.length;
+    updateSlider();
 }
 
-nextArrow.addEventListener('click', nextSlide);
-prevArrow.addEventListener('click', prevSlide);
+nextButton.addEventListener('click', showNextSlide);
+prevButton.addEventListener('click', showPrevSlide);
 
-// Update layout on window resize
 window.addEventListener('resize', () => {
-    updateCardsPerView();
-    currentIndex = 0; // Reset to first slide on resize to avoid layout issues
-    updatePosition();
+    slidesPerView = getSlidesPerView();
+    currentIndex = Math.min(currentIndex, slides.length - slidesPerView);
+    updateSlider();
 });
 
-// Initial setup
-updateCardsPerView();
-updatePosition();
+// Initialize slider
+updateSlider();

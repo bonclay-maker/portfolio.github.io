@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /* Change favorite color */
-  --hue-color: 900 ;
+  --hue-color: 750 ;
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 82%, 65%);
@@ -188,7 +188,8 @@ img {
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items:center;
+
   
 }
 
@@ -276,6 +277,46 @@ img {
 }
 
 /*==================== HOME ====================*/
+
+
+/*==========  ==========*/
+
+.homeimg {
+max-width: 100;
+max-height: 200;
+}
+
+/* Ensure the container takes full width and maintains aspect ratio */
+.video-wrapper {
+  max-width: 900px;
+  display: flex;
+  justify-content: center; /* Centers the video horizontally */
+  align-items: center; /* Centers the video vertically if needed */
+  width: 80%; /* Adjust the width as needed */
+  max-width: 800px; /* Optional: set a maximum width */
+}
+
+/* Container to center the video */
+.video-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height, adjust as needed */
+  width: 100%; /* Full width */
+}
+
+/* Video styling */
+.responsive-video {
+  width: 80%; /* Set the width to 80% of the container's width */
+  max-width: 800px; /* Optional: set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+  /* Optional: You can set specific height if needed */
+  /* height: 450px; */
+  border-radius: 15px; /* Apply border-radius to the video */
+
+}
+
 
 .home__container {
   gap: 1rem;
@@ -1273,7 +1314,7 @@ img {
 }
 
 .figma__card:hover {
-  transform: translateY(-20px);
+  transform: translateY(-10px);
 }
 
 
@@ -1338,3 +1379,192 @@ img {
 
 
 
+
+
+/* Slider container */
+.slider-wrapper {
+  margin-top: 100px;
+  position: relative;
+  max-width: 900px; /* Reduced width to leave space for arrows */
+  margin: 0 auto;
+  padding: 0 60px; /* Add padding to make room for arrows */
+  box-sizing: border-box;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%; /* Changed to 100% to fill the wrapper */
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+/* Slider wrapper */
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual slide */
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Arrows styling */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(239, 215, 215, 0.5);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  margin: auto;
+  border-radius: 50%;
+  width: 40px; /* Set a fixed width */
+  height: 40px;
+}
+
+.left-arrow {
+  left: 0;
+  margin-left: 10px;
+}
+
+.right-arrow {
+  right: 0;
+  margin-right: 10px;
+}
+
+/* Optional: Styling for images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.arrow2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(239, 215, 215, 0.5);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  margin: auto;
+  border-radius: 50%;
+  width: 40px; /* Set a fixed width */
+  height: 40px;
+}
+
+.left-arrow2 {
+  left: 0;
+  margin-left: 10px;
+}
+
+.right-arrow2 {
+  right: 0;
+  margin-right: 10px;
+}
+
+
+
+.deb22 {
+  max-width: 600px;
+  width: 90%; /* This allows the container to shrink on smaller screens */
+  margin: 100px auto; /* This centers the container horizontally and adds vertical margin */
+  display: flex;
+  justify-content: center;
+}
+
+.deb22 img {
+  max-width: 100%; /* This ensures the image is never wider than its container */
+  height: auto; /* This maintains the image's aspect ratio */
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .deb22 {
+      width: 95%; /* Allows for more width on very small screens */
+      margin: 50px auto; /* Reduced vertical margin for smaller screens */
+  }
+}
+
+
+
+.form-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input,
+.form-container textarea {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.form-container textarea {
+  resize: vertical;
+  min-height: 100px;
+  border-radius: 10px;
+}
+
+.form-container button {
+  background: linear-gradient(270deg, #ff994f, #fa6d86);
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #3a7bc8;
+}
+
+/* Placeholder styling */
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+  color: #999;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .form-container {
+      margin: 1rem;
+      padding: 1.5rem;
+  }
+}
