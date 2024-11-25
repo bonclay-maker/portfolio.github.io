@@ -117,12 +117,12 @@
                 <img src="packages/images/deb2.png">
             </div>
 
-            <div class="video-container">
+           <!--<div class="video-container">
                 <video class="responsive-video" controls>
                     <source src="packages/images/final.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-            </div>
+            </div>-->
 
 
            
@@ -423,18 +423,22 @@
                 </div>
             </div> -->
 
-        <div class="form-container">
-            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="this.reset(); return true;">
-                <input type="hidden" name="access_key" value="f5e06d69-bdf8-4447-b2b5-0a6259723337">
+            <div class="form-container">
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="9fa7c3a7-e821-443b-a939-ff5528d40cfe">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                   
+            
+                    <h3>GET IN TOUCH</h3>
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <input type="text" name="phone" placeholder="Your phone number" >
+                    <textarea name="message" rows="4" placeholder="How can I help you?" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
 
-                <h3>GET IN TOUCH</h3>
-                <input type="text" name="name" placeholder="Your name" required>
-                <input type="email" name="email" placeholder="Your email" required>
-                <input type="text" name="phone" placeholder="Your phone number" required>
-                <textarea name="message" rows="4" placeholder="how can i help you"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
+            
 
         </section>
 
@@ -466,9 +470,18 @@
   <script src="packages/js/arrowNav.js"  ></script> 
     <script src="packages/js/thriftNav.js"  ></script>
     <!-- <script src="packages/js/form.js"  ></script> -->
+    <!--<script src="packages/js/webform.js"  ></script>-->
 
-
+    <script>
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', function() {
+            // Use setTimeout to reset after the form submission
+            setTimeout(() => this.reset(), 100);
+        });
+    </script>
     
 </body>
+
+
 
 </html>
